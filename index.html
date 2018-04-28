@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="Keywords" content="轮播插件| 无缝轮播"/>
+		<meta name="Description" content="轮播插件|无缝轮播 "/>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.box {
+				width: 300px;
+				height: 300px;
+				border: 5px solid #125486;
+				overflow: hidden;
+				position: relative;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="box" class="box"></div>
+	</body>
+	<script src="index.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		var arr = ["img/83293260.jpg", "img/83293353.jpg", "img/83293447.jpg",
+			"img/83293410.jpg", "img/83293300.jpg","img/83293278.jpg","img/83293260.jpg",
+		]
+		//function Lunbo(container, imgwidth, imgheight, imgurl, imgmarginLeft, speed, imgborder, movedistance)
+		var l = new MyLunbo(box, 300, 300, arr, 0, 20, 1, 0.5)
+		//l.width = 600;
+		//l.height = 600;
+		l.init()
+	</script>
+
+</html>
